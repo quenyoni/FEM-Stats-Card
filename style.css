@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+	--f-1: "Inter", sans-serif;
+	--f-2: "Lexend Deca", sans-serif;
+	/* ### Primary Colors */
+	/* (main background) */
+	--veryDarkBlue: hsl(233, 47%, 7%);
+	/* (card background) */
+	--darkDesaturatedBlue: hsl(
+		244,
+		38%,
+		16%
+	);
+	/* (accent) */
+	--softViolet: hsl(277, 64%, 61%);
+
+	/* ### Neutral */
+	/* (main heading, stats) */
+	--white: hsl(0, 0%, 100%);
+	/* (main paragraph) */
+	--SlightlyTWhite: hsla(
+		0,
+		0%,
+		100%,
+		0.75
+	);
+	/* (stat headings) */
+	--SlightlyTWhite: hsla(
+		0,
+		0%,
+		100%,
+		0.6
+	);
+	--font-size: 15px;
+}
+
+body {
+	background: var(--veryDarkBlue);
+	min-height: 100vh;
+	font-family: var(--f-1);
+font-size: 15px;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+  margin:1.5rem;
+}
+
+img {
+
+	filter: opacity(0.5)
+		drop-shadow(0 0 var(--softViolet));
+    filter: hue-rotate(50deg);
+}
+
+
+
+.insight {
+	color: var(--softViolet);
+}
+
+p {
+	color: var(--SlightlyTWhite);
+	line-height: 1.5;
+text-align: center;
+	width: 80%;
+  margin-bottom: 2rem;
+}
+
+
+.main-header {
+  text-align: center;
+margin-bottom: 1rem;
+  width: 80%;
+ 
+}
+
+
+
+/* .stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
+.stat-item {
+	color: var(--SlightlyTWhite);
+	font-family: var(--f-2);
+	text-transform: uppercase;
+}
+
+.container {
+	overflow: hidden;
+	border-radius: 1rem;
+	/* padding: 1rem; */
+	max-width: 1440px;
+	margin: 2rem;
+	background: var(
+		--darkDesaturatedBlue
+	);
+	color: #fff;
+	margin-inline: auto;
+}
+
+.stats > * {
+  margin-right: 0rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.holder{
+
+ position: relative;
+}
+
+.other{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  flex: 2;
+}
+
+.colors{
+  position:absolute;
+  background: var(--softViolet);
+ 
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  opacity: .5;
+}
+img{
+  width: 100%;
+  display: block;
+}
+
+
+
+@media (min-width: 768px) {
+  img{
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+
+
+
+
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.container {
+		max-width: 1200px;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+  .holder{
+    flex:1;
+   position: relative;
+  }
+
+ 
+
+	p {
+		line-height: 1.5;
+		
+		width: 75%;
+    text-align: left;
+	}
+
+
+
+	.text {
+		flex: 1;
+		padding: 2rem;
+	}
+
+	.stats {
+		display: flex;
+		justify-content: flex-start;
+		/* align-items:center; */
+	}
+
+	.stats > * {
+		margin-right: 2rem;
+    margin-bottom: 0rem;
+	}
+
+
+
+	.main-header {
+		text-align: left;
+    margin-bottom: 2rem;
+	}
+  .other{
+
+    flex:1;
+
+  
+    align-items: flex-start;
+  }
+}
+
+/* - Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400 */
