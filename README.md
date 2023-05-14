@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [[Add solution URL here](https://fem-stats-card-tan.vercel.app/)](https://fem-stats-card-tan.vercel.app/)
+- Solution URL: [(https://fem-stats-card-tan.vercel.app/)](https://fem-stats-card-tan.vercel.app/)
 
 
 
